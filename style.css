@@ -1,0 +1,225 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	text-align: center;
+	margin: 0px;
+	padding-top: 20px;
+	letter-spacing: 3px;
+	font-size: 40px;
+
+}
+header{
+	background-color: lavender;
+	height: 100px;
+	
+}
+nav{
+	background-color: grey;
+
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+ul li{
+	list-style-type: none;
+	
+	flex-basis: 300px;
+	text-align: center;
+
+}
+ul li a{
+	color: white;
+	display: block;
+	text-decoration: none;
+	font-size: 22px;
+	padding: 13px;
+
+}
+
+
+
+ul li a:hover{
+	background-color: black;
+
+}
+
+.landing_page{
+	background-image: url(web1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.landing_page h2{
+	margin: 0px;
+}
+.landing_text{
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: white;
+}
+.landing_text button{
+	font-size: 26px;
+	background-color: grey;
+	color: white;
+	border: none;
+	margin-top: 15px;
+	padding: 8px 20px;
+	letter-spacing: 3px;
+}
+
+.landing_text button:hover{
+	background-color: #9FFD8E ;
+	color: black;
+
+}
+
+.kurset{
+	width: 90%;
+	margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 300px 300px;
+	grid-template-areas: 
+	" k1 k2 kf kf "
+	" k3 k4 kf kf ";
+
+    grid-gap: 6px;
+
+
+
+}
+.kurset>div{
+	background-color: lavender;
+}
+.kurset h4{
+	text-align: center;
+	font-size: 24px;
+}
+.kurset p{
+	padding: 8px 14px;
+}
+.kursi_1{
+	
+	grid-area: k1;
+}
+.kursi_2{
+	
+	grid-area: k2;
+}
+.kursi_3{
+	
+	grid-area: k3;
+}
+.kursi_4{
+	
+	grid-area: k4;
+}
+.kursi_foto{
+	background-image: url(web2.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-area: kf;
+}
+
+h6{
+	margin:15px auto;
+	width: 50px;
+	color: white;
+	background-color: grey;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 90%;
+}
+
+.info{
+	background-color: whitesmoke;
+	width: 90%;
+	margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 400px;
+	grid-template-areas: 
+	" k1 k2 kf kf "
+	" k3 k4 kf kf ";
+
+    grid-gap: 6px;
+
+}
+
+
+input{
+	margin-bottom: 20px;
+	margin-left: 35px;
+}
+.info_b button{
+	margin-left: 80px;
+}
+.info_c h1{
+	text-align: center;
+	font-size: 20px;
+}
+.info_c h3{
+	text-align: center;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+	.kurset{
+    grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 300px 300px 300px;
+	grid-template-areas: 
+	" kf kf "
+	" k1 k2 "
+	" k3 k4 ";
+}
+
+}
+
+
+@media(max-width: 576px){
+	li{flex: 1 1 300px;
+	border: black 2px solid;
+}
+}
